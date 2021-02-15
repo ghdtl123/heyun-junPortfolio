@@ -1,0 +1,144 @@
+#wrap{}
+#header{}
+#section{}
+#footer{}
+
+@keyframes cursor{ 
+    0%{border-right: 1px solid #fff} 
+    50%{border-right: 1px solid #000} 
+    100%{border-right: 1px solid #fff} 
+    }
+
+/*********************header****************************/
+
+
+/*********************section****************************/
+
+/*sec1*/
+#sec1{position: relative;height: 100%;}
+#sec1 .typing-txt{display: none;}
+#sec1 .typing{margin-left: 100px;
+              margin-top: 150px;
+              height: 500px;}
+#sec1 .typing ul li{display:block;
+              font-size: 10rem; font-weight: 900;
+              line-height: 1em;
+              color: #fff; }
+#sec1 .typing ul li.on {  
+  display: inline-block; 
+  animation-name: cursor; 
+  animation-duration: 0.3s; 
+  animation-iteration-count: infinite;}
+
+.stage{-webkit-perspective:1300;
+       -ms-perspective:1300;
+       -o-perspective:1300;
+       -moz-perspective:1300;
+       perspective:1300;
+       position: fixed; top: 300px;right: 220px;}
+
+.cube{height: 400px;
+      width: 400px;
+      position: relative;
+      margin: 0 auto;
+      transform-style:preserve-3d;
+      -webkit-transform-style:preserve-3d;
+      -ms-transform-style:preserve-3d;
+      -o-transform-style:preserve-3d;
+      -moz-transform-style:preserve-3d;
+      transform: rotateY(30deg) rotateX(15deg);
+      -webkit-transform : rotateY(15deg)  rotateX(5deg);
+      -ms-transform: rotateY(15deg)  rotateX(5deg);
+      -o-transform:rotateY(15deg)  rotateX(5deg);
+      -moz-transform:rotateY(15deg)  rotateX(5deg);
+      z-index:1;}
+
+.cube div{height: 400px;
+          width:  400px;
+          position: absolute;
+          color: #fff;
+          text-align: center;
+          line-height: 100px;}
+
+.top{background: rgba(0,0,0,0.7);
+     top: -200px;
+     left: 0px;
+     transform: rotateX(45deg);
+     -webkit-transform : rotateX(90deg);
+     -ms-transform: rotateX(90deg);
+     -o-transform:rotateX(90deg);
+     -moz-transform:rotateX(90deg);}
+.bottom{background: rgba(0,0,0,0.7);
+        top: 200px;
+        left: 0px;
+        transform: rotateX(-90deg);
+        -webkit-transform : rotateX(-90deg);
+        -ms-transform: rotateX(-90deg);
+        -o-transform:rotateX(-90deg);
+        -moz-transform:rotateX(-90deg);}
+.left{background: rgba(0,160,233,0.7);
+      top: 0px;
+      left: -200px;
+      transform: rotateY(-90deg);
+      -webkit-transform : rotateY(-90deg);
+      -ms-transform: rotateY(-90deg);
+      -o-transform:rotateY(-90deg);
+      -moz-transform:rotateY(-90deg);}
+.right{background: rgba(0,160,233,0.7);
+       top: 0px;
+       left: 200px;
+       transform: rotateY(90deg);
+       -webkit-transform : rotateY(90deg);
+       -ms-transform: rotateY(90deg);
+       -o-transform:rotateY(90deg);
+       -moz-transform:rotateY(90deg);}    
+.front{background: rgba(215,0,81,0.7);
+       top: 0px;
+       left: 0px;
+       transform: translateZ(100px);
+       -webkit-transform : translateZ(200px);
+       -ms-transform: translateZ(100px);
+       -o-transform:translateZ(100px);}
+.back{background: rgba(215,0,81,0.7);
+      top: 0px;
+      left: 0px;
+      transform: translateZ(-100px);
+      -webkit-transform : translateZ(-200px);
+      -ms-transform: translateZ(-100px);
+      -o-transform:translateZ(-100px);}
+
+
+#sec1 .mimg{margin: 0 auto;
+            width: 200px; height: 200px;
+            margin-top: 50px;}
+#sec1 .mimg img{width: 100%;}
+
+/*sec2*/
+#sec2 h2{font-size: 10rem; font-weight: 900;
+         line-height: 1em;
+         color: #fff;
+         margin-left: 100px;
+         margin-top: 250px;}
+#sec2 ul{margin-left: 200px;}    
+#sec2 ul li{color: #fff;
+            font-size: 3rem;
+            font-family: 'Noto Sans KR', sans-serif;}
+#sec2 ul li a{font-size: 2rem;
+              border: 2px solid#fff;
+              padding: 10px 20px;
+              border-radius: 10px;}
+#sec2 ul li .stargo:hover{background-color: #fff;
+                          border: none;
+                          color: #EC9C0A;}
+#sec2 ul li .cocago:hover{background-color: #fff;
+                          border: none;
+                          color: #e31d2e;}
+#sec2 ul li .lisgo:hover{background-color: #fff;
+                          border: none;
+                          color: #139FC0;}
+
+/*sec3*/
+
+
+
+/*********************footer****************************/
