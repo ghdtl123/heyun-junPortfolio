@@ -10,12 +10,15 @@
     <title>Jun_portfolio 2</title>
     <link href="images/16pxicon.png" rel="shortcut icon" type="image/x-icon">
     <link href="css/common.css" rel="stylesheet" type="text/css">
+    <link rel="stylesheet" href="css/magnific-popup.css">
     <link rel="stylesheet" href="css/animate.css">
     <link rel="stylesheet" href="css/wowanimate.css">
     <link href="css/style.css" rel="stylesheet" type="text/css">
 
     <script src="./js/jquery-3.1.1.min.js" type="text/javascript"></script>
     <script src="http://code.jquery.com/jquery-migrate-3.0.0.js"></script>
+    <script src="js/jquery.magnific-popup.min.js"></script>
+    <script src="js/magnific-popup-options.js"></script>
     <script src="js/wow.min.js"></script>
     <script src="js/wow.js"></script>
     <script>
@@ -28,18 +31,18 @@
 <body>
     <div id="wrap">
         <header id="header">
-            <div id="headerbox">
-                <h1 id="logo">
-                    <a href="index.html"><img src="images/logo.png" alt="로고"></a>
-                </h1>
+            <nav>
                 <ul class="gnb">
-                    <li class="active"><a href="#sec1">TOP</a></li>
-                    <li><a href="#sec2">WEB SITE 1</a></li>
-                    <li><a href="#sec3">WEB SITE 2</a></li>
-                    <li><a href="#sec4">WEB SITE 3</a></li>
+                    <li class="logo">
+                        <a href="index.html"><img src="images/logo.png" alt="로고"></a>
+                    </li>
+                    <li class="active"><a href="#sec2">STAR</a></li>
+                    <li><a href="#sec3">COCA-COLA</a></li>
+                    <li><a href="#sec4">LISTERINE</a></li>
                     <li><a href="#sec5">DESIGN</a></li>
+                    <li><a href="#sec6">ABOUT ME</a></li>
                 </ul>
-            </div>
+            </nav>
         </header>
         <div id="sec">
             <div id="sec1">
@@ -59,12 +62,12 @@
                 </div>
                 <div class="stage">
                     <div class="cube">
-                        <div class="top">TOP</div>
-                        <div class="bottom">BOTTOM</div>
-                        <div class="right">RIGHT</div>
-                        <div class="left">LEFT</div>
-                        <div class="back">BACK</div>
-                        <div class="front">FRONT</div>
+                        <div class="top"><img src="images/psimg.png" alt="포토샵 이미지"></div>
+                        <div class="bottom"><img src="images/psimg.png" alt="포토샵 이미지"></div>
+                        <div class="right"><img src="images/xdimg.png" alt="XD 이미지"></div>
+                        <div class="left"><img src="images/aiimg.png" alt="일러스트 이미지"></div>
+                        <div class="back"><img src="images/chromimg.png" alt="크롬 이미지"></div>
+                        <div class="front"><img src="images/psimg.png" alt="포토샵 이미지"></div>
                     </div>
                 </div>
                 <hr>
@@ -87,7 +90,7 @@
                     <li><a href="https://ghdtl123.github.io/proj1/" target="_blank">WEB SITE GO</a></li>
                 </ul>
                 <div class="imgbox wow fadeIn" data-wow-delay="0.9s">
-
+                    <a href="https://ghdtl123.github.io/proj1/" target="_blank"><img src="images/starimg.png" alt="스타피부과 이미지"></a>
                 </div>
             </div>
             <!--#sec2-->
@@ -106,7 +109,7 @@
                     <li><a href="pdf/coca_Identity.pdf" target="_blank">IDENTITY</a></li>
                 </ul>
                 <div class="imgbox wow fadeIn" data-wow-delay="0.9s">
-
+                    <a href="https://ghdtl123.github.io/proj2-1/" target="_blank"><img src="images/cocaimg.png" alt="코카콜라 이미지"></a>
                 </div>
             </div>
             <!--#sec3-->
@@ -124,53 +127,83 @@
                     <li><a href="https://ghdtl123.github.io/proj3/" target="_blank">WEB SITE GO</a></li>
                 </ul>
                 <div class="imgbox wow fadeIn" data-wow-delay="0.9s">
-
+                    <a href="https://ghdtl123.github.io/proj3/" target="_blank"><img src="images/liaterineimg.png" alt="리스테린 이미지"></a>
                 </div>
             </div>
             <!--#sec4-->
 
             <div id="sec5">
                 <ul>
-                    <li class="wow animate__fadeInTopLeft"><a href="#">#ICON</a></li>
-                    <li class="wow animate__fadeIn" data-wow-delay="0.6s"><a href="#">#BANNER</a></li>
-                    <li class="wow animate__fadeInBottomLeft" data-wow-delay="0.3s"><a href="#">#OTHERS</a></li>
+                    <li class="wow animate__fadeInTopLeft" data-wow-delay="0.3s">
+                        <a href="images/logo/logoimg1.jpg" class="image-popup">#LOGO</a>
+                        <a href="images/logo/logoimg2.jpg" class="image-popup"></a>
+                        <a href="images/logo/logoimg3.png" class="image-popup"></a>
+                        <a href="images/logo/logoimg4.png" class="image-popup"></a>
+                        <a href="images/logo/logoimg5.png" class="image-popup"></a>
+                    </li>
+                    <li class="wow animate__fadeIn" data-wow-delay="0.6s">
+                        <a href="images/icon/iconimg1.png" class="image-popup">#ICON</a>
+                        <a href="images/icon/iconimg2.png" class="image-popup"></a>
+                        <a href="images/icon/iconimg3.png" class="image-popup"></a>
+                        <a href="images/icon/iconimg4.png" class="image-popup"></a>
+                        <a href="images/icon/iconimg5.png" class="image-popup"></a>
+                    </li>
+                    <li class="wow animate__fadeIn" data-wow-delay="0.6s">
+                        <a href="images/banner/banner2.jpg" class="image-popup">#BANNER</a>
+                        <a href="images/banner/banner3.jpg" class="image-popup"></a>
+                        <a href="images/banner/banner4.jpg" class="image-popup"></a>
+                        <a href="images/banner/banner5.png" class="image-popup"></a>
+                        <a href="images/banner/banner6.png" class="image-popup"></a>
+                        <a href="images/banner/banner7.png" class="image-popup"></a>
+                        <a href="images/banner/banner8.png" class="image-popup"></a>
+                        <a href="images/banner/banner9.png" class="image-popup"></a>
+                        <a href="images/banner/banner1.png" class="image-popup"></a>
+                        <a href="images/banner/banner10.png" class="image-popup"></a>
+                        <a href="images/banner/banner11.png" class="image-popup"></a>
+                        <a href="images/banner/banner12.png" class="image-popup"></a>
+                    </li>
+                    <li class="wow animate__fadeInBottomLeft" data-wow-delay="0.3s">
+                        <a href="images/ohter/ohter1.png" class="image-popup">#OTHERS</a>
+                        <a href="images/ohter/ohter2.png" class="image-popup"></a>
+                        <a href="images/ohter/ohter3.jpg" class="image-popup"></a>
+                        <a href="images/ohter/ohter4.jpg" class="image-popup"></a>
+                    </li>
                 </ul>
                 <div class="imgbox wow fadeIn" data-wow-delay="0.9s">
-
+                    <img src="images/desingimg.png" alt="디자인 이미지">
                 </div>
                 <hr>
                 <p class="wow fadeInDown" data-wow-delay="0.9s">Thank you for viewing my portfolio so far. Please us at the number below.</p>
                 <p class="txtk wow fadeInLeft" data-wow-delay="1.2s">지금까지 저의 포트폴리오를 봐주셔서 감사합니다. 아래의 연락처로 연락주세요.</p>
             </div>
             <!--#sec5-->
-
+            <div id="sec6">
+                <h2>
+                    #ABOUT ME
+                </h2>
+                <hr>
+                <ul>
+                    <li>홍현준</li>
+                    <li>010-5368-0707</li>
+                    <li>ghdtl123@daum.net</li>
+                    <li><a href="pdf/Hong heyun-jun.pdf" target="_blank">이력서 보러가기</a></li>
+                </ul>
+                <div class="imgbox">
+                    <a href="pdf/Hong heyun-jun.pdf" target="_blank"><img src="images/heyun-jun.png" alt="이력서 이미지"></a>
+                </div>
+                <hr>
+                <div class="arrow-down">
+                    <a href="index.html">
+                        <span></span>
+                        <span></span>
+                        <span></span>
+                    </a>
+                    <p>TOP</p>
+                </div>
+            </div>
+            <!--#sec6-->
         </div>
         <!--#sec-->
-        <hr>
-        <footer id="footer">
-            <h2>
-                #ABOUT ME
-            </h2>
-            <hr>
-            <ul>
-                <li>홍현준</li>
-                <li>010-5368-0707</li>
-                <li>ghdtl123@daum.net</li>
-                <li><a href="pdf/Hong heyun-jun.pdf" target="_blank">이력서 보러가기</a></li>
-            </ul>
-            <div class="imgbox">
-                <a href="pdf/Hong heyun-jun.pdf" target="_blank"><img src="images/heyun-jun.png" alt="이력서 이미지"></a>
-            </div>
-            <hr>
-            <div class="arrow-down">
-                <a href="index.html">
-                    <span></span>
-                    <span></span>
-                    <span></span>
-                </a>
-                <p>TOP</p>
-            </div>
-        </footer>
     </div>
     <!--#wrap-->
 </body>

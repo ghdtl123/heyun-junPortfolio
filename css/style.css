@@ -115,7 +115,6 @@ section {}
 }
 
 .top {
-    background: rgba(0, 0, 0, 0.7);
     top: -200px;
     left: 0px;
     transform: rotateX(45deg);
@@ -126,7 +125,6 @@ section {}
 }
 
 .bottom {
-    background: rgba(0, 0, 0, 0.7);
     top: 200px;
     left: 0px;
     transform: rotateX(-90deg);
@@ -137,7 +135,6 @@ section {}
 }
 
 .left {
-    background: rgba(0, 160, 233, 0.7);
     top: 0px;
     left: -200px;
     transform: rotateY(-90deg);
@@ -148,7 +145,6 @@ section {}
 }
 
 .right {
-    background: rgba(0, 160, 233, 0.7);
     top: 0px;
     left: 200px;
     transform: rotateY(90deg);
@@ -159,7 +155,6 @@ section {}
 }
 
 .front {
-    background: rgba(215, 0, 81, 0.7);
     top: 0px;
     left: 0px;
     transform: translateZ(100px);
@@ -168,8 +163,11 @@ section {}
     -o-transform: translateZ(100px);
 }
 
+.front img {
+    width: 100%;
+}
+
 .back {
-    background: rgba(215, 0, 81, 0.7);
     top: 0px;
     left: 0px;
     transform: translateZ(-100px);
@@ -237,7 +235,6 @@ section {}
     width: 500px;
     height: 400px;
     float: right;
-    background-color: aqua;
     margin-top: 70px;
     margin-right: 200px;
     opacity: 0.8;
@@ -245,6 +242,10 @@ section {}
     backface-visibility: visible;
     transform-origin: 70% 50%;
     transform: perspective(540px) rotateY(-13deg);
+}
+
+#sec2 .imgbox img {
+    width: 100%;
 }
 
 #sec2 .imgbox:hover {
@@ -309,7 +310,6 @@ section {}
     width: 500px;
     height: 400px;
     float: right;
-    background-color: aqua;
     margin-top: 70px;
     margin-right: 200px;
     opacity: 0.8;
@@ -317,6 +317,10 @@ section {}
     backface-visibility: visible;
     transform-origin: 70% 50%;
     transform: perspective(540px) rotateY(-13deg);
+}
+
+#sec3 .imgbox img {
+    width: 100%;
 }
 
 #sec3 .imgbox:hover {
@@ -381,7 +385,6 @@ section {}
     width: 500px;
     height: 400px;
     float: right;
-    background-color: aqua;
     margin-top: 70px;
     margin-right: 200px;
     opacity: 0.8;
@@ -389,6 +392,10 @@ section {}
     backface-visibility: visible;
     transform-origin: 70% 50%;
     transform: perspective(540px) rotateY(-13deg);
+}
+
+#sec4 .imgbox img {
+    width: 100%;
 }
 
 #sec4 .imgbox:hover {
@@ -406,8 +413,12 @@ section {}
 
 #sec5 ul {
     float: left;
-    padding-top: 200px;
-    padding-bottom: 150px;
+    padding-top: 100px;
+    padding-bottom: 50px;
+}
+
+#sec5 ul li {
+    width: 1000px;
 }
 
 #sec5 ul li a {
@@ -434,10 +445,9 @@ section {}
 }
 
 #sec5 .imgbox {
+    float: right;
     width: 500px;
     height: 400px;
-    float: right;
-    background-color: aqua;
     opacity: 0.8;
     margin-top: 250px;
     margin-right: 200px;
@@ -453,6 +463,121 @@ section {}
     transform: perspective(500px) rotateY(0deg);
     opacity: 1;
     box-shadow: rgba(0, 0, 0, 0.15) 7px 7px 7px 0px;
+}
+
+
+/*sec6*/
+
+#sec6 h2 {
+    float: left;
+    font-size: 10rem;
+    font-weight: 900;
+    line-height: 1em;
+    color: #fff;
+    padding-top: 200px;
+    margin-left: 100px;
+}
+
+#sec6 ul {
+    float: left;
+    padding-top: 80px;
+    margin-left: 200px;
+}
+
+#sec6 ul li {
+    font-size: 3rem;
+    color: #fff;
+    font-family: 'Noto Sans KR', sans-serif;
+}
+
+#sec6 ul li a {
+    font-size: 2rem;
+    border: 2px solid#fff;
+    padding: 10px 20px;
+    border-radius: 10px;
+    transition: 0.3s;
+}
+
+#sec6 ul li:last-child {
+    padding-top: 30px;
+}
+
+#sec6 ul li a:hover {
+    border: none;
+    background-color: #252326;
+}
+
+#sec6 .imgbox {
+    width: 500px;
+    float: right;
+    margin-top: 50px;
+    margin-right: 200px;
+    transition: 0.5s;
+    opacity: 0.8;
+    backface-visibility: visible;
+    transform-origin: 70% 50%;
+    transform: perspective(540px) rotateY(-13deg);
+}
+
+#sec6 .imgbox img {
+    width: 100%;
+}
+
+#sec6 .imgbox:hover {
+    backface-visibility: visible;
+    transform-origin: 70% 50%;
+    transform: perspective(500px) rotateY(0deg);
+    opacity: 1;
+    box-shadow: rgba(0, 0, 0, 0.15) 7px 7px 7px 0px;
+}
+
+#sec6 .arrow-down {
+    margin: 0 auto;
+    width: 50px;
+    height: 50px;
+}
+
+#sec6 .arrow-down p {
+    color: #fff;
+    font-size: 2rem;
+    transform: translate(-15px, 30px);
+}
+
+#sec6 .arrow-down span {
+    display: block;
+    width: 2em;
+    height: 2em;
+    border-top: 2px solid #fff;
+    border-left: 2px solid #fff;
+    transform: rotate(45deg);
+    margin: -10px;
+    animation: animate-arrows 2s infinite;
+}
+
+.arrow-down span:nth-child(1) {
+    animation-delay: -0.2s;
+}
+
+.arrow-down span:nth-child(2) {
+    animation-delay: -0.4s;
+}
+
+.arrow-down span:nth-child(3) {
+    animation-delay: -0.6s;
+}
+
+@keyframes animate-arrows {
+    0% {
+        opacity: 0;
+        transform: rotate(45deg) translate(1.5em, 1.5em);
+    }
+    50% {
+        opacity: 1;
+    }
+    100% {
+        opacity: 0;
+        transform: rotate(45deg) translate(-1.5em, -1.5em);
+    }
 }
 
 
